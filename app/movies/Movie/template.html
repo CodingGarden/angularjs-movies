@@ -1,0 +1,9 @@
+<div class="panel panel-default movie" style="height: 100%">
+  <div class="center-container">
+    <img class="img-responsive" ng-src="https://image.tmdb.org/t/p/w500/{{$ctrl.movie.poster_path}}">
+  </div>
+  <div class="panel-body">
+    <h3 class="text-center">{{ $ctrl.movie.title }}</h3>
+    <app-rating rating="$ctrl.movie.vote_average"></app-rating>
+  </div>
+</div>

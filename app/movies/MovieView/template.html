@@ -1,0 +1,16 @@
+<ol class="breadcrumb">
+  <li><a href="#!/">Popular Movies</a></li>
+  <li ng-if="$ctrl.movie" class="active">{{$ctrl.movie.title}}</li>
+</ol>
+<div ng-if="$ctrl.loading" class="h2 text-center">Loading...</div>
+<div ng-if="$ctrl.movie" class="row">
+  <div class="col-xs-6">
+    <img class="img-responsive" ng-src="https://image.tmdb.org/t/p/w500/{{$ctrl.movie.poster_path}}">
+  </div>
+  <div class="col-xs-6">
+    <h1>{{$ctrl.movie.title}}</h1>
+    <h3>{{$ctrl.movie.tagline}}</h3>
+    <app-rating rating="$ctrl.movie.vote_average"></app-rating>
+    <p>{{$ctrl.movie.lang}}</p>
+  </div>
+</div>

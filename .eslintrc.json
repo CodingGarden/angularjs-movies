@@ -1,0 +1,30 @@
+{
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "config": "readonly",
+    "angular": "readonly"
+  },
+  "extends": "eslint:recommended",
+  "overrides": [
+  ],
+  "parserOptions": {
+    "ecmaVersion": 5
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ]
+  }
+}

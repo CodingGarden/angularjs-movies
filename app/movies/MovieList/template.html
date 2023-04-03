@@ -1,0 +1,9 @@
+<div class="app-grid" ng-repeat="page in $ctrl.pages">
+  <div ng-repeat="movie in page">
+    <a href="#!/movie/{{movie.id}}">
+      <app-movie movie="movie"></app-movie>
+    </a>
+  </div>
+</div>
+<div class="h2 text-center">Loading...</div>
+<infinite-scroll ng-if="!$ctrl.loading" on-visible="$ctrl.endOfPage()"></infinite-scroll>
